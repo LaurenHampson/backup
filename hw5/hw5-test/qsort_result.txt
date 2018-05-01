@@ -1,0 +1,156 @@
+Note: Google Test filter = QSortTest.Test1
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test1
+[       OK ] QSortTest.Test1 (51 ms)
+[----------] 1 test from QSortTest (57 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (99 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test2
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test2
+[       OK ] QSortTest.Test2 (47 ms)
+[----------] 1 test from QSortTest (53 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (85 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test3
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test3
+[       OK ] QSortTest.Test3 (69 ms)
+[----------] 1 test from QSortTest (75 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (112 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test4
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test4
+[       OK ] QSortTest.Test4 (57 ms)
+[----------] 1 test from QSortTest (64 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (96 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test5
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test5
+[       OK ] QSortTest.Test5 (12 ms)
+[----------] 1 test from QSortTest (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (58 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test6
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test6
+[       OK ] QSortTest.Test6 (52 ms)
+[----------] 1 test from QSortTest (57 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (88 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test7
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test7
+[       OK ] QSortTest.Test7 (52 ms)
+[----------] 1 test from QSortTest (60 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (93 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test8
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test8
+[       OK ] QSortTest.Test8 (64 ms)
+[----------] 1 test from QSortTest (76 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (115 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test9
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test9
+[       OK ] QSortTest.Test9 (44 ms)
+[----------] 1 test from QSortTest (49 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (77 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test10
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test10
+[       OK ] QSortTest.Test10 (86 ms)
+[----------] 1 test from QSortTest (92 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (130 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test11
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test11
+[       OK ] QSortTest.Test11 (38 ms)
+[----------] 1 test from QSortTest (45 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (87 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test12
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test12
+[       OK ] QSortTest.Test12 (168 ms)
+[----------] 1 test from QSortTest (175 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (209 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = QSortTest.Test13
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from QSortTest
+[ RUN      ] QSortTest.Test13
+[       OK ] QSortTest.Test13 (1250 ms)
+[----------] 1 test from QSortTest (1258 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (1292 ms total)
+[  PASSED  ] 1 test.
+

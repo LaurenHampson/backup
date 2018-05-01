@@ -1,0 +1,214 @@
+Running main() from gtest_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SplayTest
+[ RUN      ] SplayTest.Test24_RemoveRecursiveSplay
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 0
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 0
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 1
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 1
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 10
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 10
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 7
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 7
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 5
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 5
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 9
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 9
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 8
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 8
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 11
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 11
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 12
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 12
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 3
+Expected: src->getKey()
+Which is: 15
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 3
+Expected: src->getValue()
+Which is: 15
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0750
+splay_test/splay_gtest_header.h:183: Failure
+Value of: cmp
+  Actual: 0x5ce0750
+Expected: nullptr
+Which is: NULL
+splay_test/splay_gtest_header.h:167: Failure
+Value of: root == nullptr || src != end
+  Actual: false
+Expected: true

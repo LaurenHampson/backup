@@ -1,0 +1,44 @@
+
+	FOUND: 4
+	FOUND: step4/data7.txt
+	FOUND: step4/data4.txt
+	FOUND: step4/data5.txt
+	FOUND: step4/data6.txt
+
+Test config13 passed
+
+	FOUND: 2
+	FOUND: step4/data3.txt
+	FOUND: step4/data2.txt
+
+Test config14 passed
+
+	FOUND: 2
+	FOUND: step4/data4.txt
+	FOUND: step4/data5.txt
+
+Test config15 passed
+
+	FOUND: 5
+	FOUND: step4/data8.txt
+	FOUND: step4/data7.txt
+	FOUND: step4/data6.txt
+	FOUND: step4/data9.txt
+	FOUND: step4/data10.txt
+
+Test config16 passed
+
+	FOUND: 9
+	FOUND: step4/data8.txt
+	FOUND: step4/data7.txt
+	FOUND: step4/data3.txt
+	FOUND: step4/data4.txt
+	FOUND: step4/data6.txt
+	FOUND: step4/data2.txt
+	FOUND: step4/data5.txt
+	FOUND: step4/data9.txt
+	FOUND: step4/data10.txt
+
+Test config17 passed
+
+All Test Cases Passed

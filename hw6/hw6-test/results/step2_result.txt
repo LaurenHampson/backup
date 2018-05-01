@@ -1,0 +1,12 @@
+
+	FOUND: step2/data/data1.in
+	FOUND: a
+
+Test config1 passed
+
+	FOUND: 1
+	FOUND: step2/data/data1.in
+
+Test config2 passed
+
+All Test Cases Passed

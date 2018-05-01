@@ -60,10 +60,10 @@ using namespace std;
 			return incoming_;
 			
 		}
-		void WebPage::outgoingLink (std::set<std::string> name) // add new outgoing link to a webpages set
+		void WebPage::outgoingLink (std::set<std::string>& words) // add new outgoing link to a webpages set
 		{
 			std::set<std::string>::iterator i;
-			for (i = name.begin(); i != name.end(); i++)
+			for (i = words.begin(); i != words.end(); i++)
 			{
 				outgoing_.insert(lowerCase(*i));
 			}

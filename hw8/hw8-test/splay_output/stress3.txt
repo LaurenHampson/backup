@@ -1,0 +1,14 @@
+Running main() from gtest_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SplayTest
+[ RUN      ] SplayTest.Stress3_Remove
+bst1: 13.039
+bst2: 26.756
+bst3: 62.461
+[       OK ] SplayTest.Stress3_Remove (5977 ms)
+[----------] 1 test from SplayTest (5983 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (6012 ms total)
+[  PASSED  ] 1 test.

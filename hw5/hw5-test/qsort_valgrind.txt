@@ -1,0 +1,273 @@
+==3250== Memcheck, a memory error detector
+==3250== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3250== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3250== Command: ./qsort --gtest_filter=QSortTest.Test1
+==3250== Parent PID: 3249
+==3250== 
+==3250== 
+==3250== HEAP SUMMARY:
+==3250==     in use at exit: 72,704 bytes in 1 blocks
+==3250==   total heap usage: 213 allocs, 212 frees, 123,709 bytes allocated
+==3250== 
+==3250== LEAK SUMMARY:
+==3250==    definitely lost: 0 bytes in 0 blocks
+==3250==    indirectly lost: 0 bytes in 0 blocks
+==3250==      possibly lost: 0 bytes in 0 blocks
+==3250==    still reachable: 0 bytes in 0 blocks
+==3250==         suppressed: 72,704 bytes in 1 blocks
+==3250== 
+==3250== For counts of detected and suppressed errors, rerun with: -v
+==3250== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3256== Memcheck, a memory error detector
+==3256== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3256== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3256== Command: ./qsort --gtest_filter=QSortTest.Test2
+==3256== Parent PID: 3255
+==3256== 
+==3256== 
+==3256== HEAP SUMMARY:
+==3256==     in use at exit: 72,704 bytes in 1 blocks
+==3256==   total heap usage: 215 allocs, 214 frees, 123,773 bytes allocated
+==3256== 
+==3256== LEAK SUMMARY:
+==3256==    definitely lost: 0 bytes in 0 blocks
+==3256==    indirectly lost: 0 bytes in 0 blocks
+==3256==      possibly lost: 0 bytes in 0 blocks
+==3256==    still reachable: 0 bytes in 0 blocks
+==3256==         suppressed: 72,704 bytes in 1 blocks
+==3256== 
+==3256== For counts of detected and suppressed errors, rerun with: -v
+==3256== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3262== Memcheck, a memory error detector
+==3262== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3262== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3262== Command: ./qsort --gtest_filter=QSortTest.Test3
+==3262== Parent PID: 3261
+==3262== 
+==3262== 
+==3262== HEAP SUMMARY:
+==3262==     in use at exit: 72,704 bytes in 1 blocks
+==3262==   total heap usage: 217 allocs, 216 frees, 125,637 bytes allocated
+==3262== 
+==3262== LEAK SUMMARY:
+==3262==    definitely lost: 0 bytes in 0 blocks
+==3262==    indirectly lost: 0 bytes in 0 blocks
+==3262==      possibly lost: 0 bytes in 0 blocks
+==3262==    still reachable: 0 bytes in 0 blocks
+==3262==         suppressed: 72,704 bytes in 1 blocks
+==3262== 
+==3262== For counts of detected and suppressed errors, rerun with: -v
+==3262== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3268== Memcheck, a memory error detector
+==3268== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3268== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3268== Command: ./qsort --gtest_filter=QSortTest.Test4
+==3268== Parent PID: 3267
+==3268== 
+==3268== 
+==3268== HEAP SUMMARY:
+==3268==     in use at exit: 72,704 bytes in 1 blocks
+==3268==   total heap usage: 217 allocs, 216 frees, 125,637 bytes allocated
+==3268== 
+==3268== LEAK SUMMARY:
+==3268==    definitely lost: 0 bytes in 0 blocks
+==3268==    indirectly lost: 0 bytes in 0 blocks
+==3268==      possibly lost: 0 bytes in 0 blocks
+==3268==    still reachable: 0 bytes in 0 blocks
+==3268==         suppressed: 72,704 bytes in 1 blocks
+==3268== 
+==3268== For counts of detected and suppressed errors, rerun with: -v
+==3268== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3276== Memcheck, a memory error detector
+==3276== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3276== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3276== Command: ./qsort --gtest_filter=QSortTest.Test5
+==3276== Parent PID: 3275
+==3276== 
+==3276== 
+==3276== HEAP SUMMARY:
+==3276==     in use at exit: 72,704 bytes in 1 blocks
+==3276==   total heap usage: 207 allocs, 206 frees, 123,653 bytes allocated
+==3276== 
+==3276== LEAK SUMMARY:
+==3276==    definitely lost: 0 bytes in 0 blocks
+==3276==    indirectly lost: 0 bytes in 0 blocks
+==3276==      possibly lost: 0 bytes in 0 blocks
+==3276==    still reachable: 0 bytes in 0 blocks
+==3276==         suppressed: 72,704 bytes in 1 blocks
+==3276== 
+==3276== For counts of detected and suppressed errors, rerun with: -v
+==3276== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3285== Memcheck, a memory error detector
+==3285== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3285== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3285== Command: ./qsort --gtest_filter=QSortTest.Test6
+==3285== Parent PID: 3284
+==3285== 
+==3285== 
+==3285== HEAP SUMMARY:
+==3285==     in use at exit: 72,704 bytes in 1 blocks
+==3285==   total heap usage: 217 allocs, 216 frees, 125,637 bytes allocated
+==3285== 
+==3285== LEAK SUMMARY:
+==3285==    definitely lost: 0 bytes in 0 blocks
+==3285==    indirectly lost: 0 bytes in 0 blocks
+==3285==      possibly lost: 0 bytes in 0 blocks
+==3285==    still reachable: 0 bytes in 0 blocks
+==3285==         suppressed: 72,704 bytes in 1 blocks
+==3285== 
+==3285== For counts of detected and suppressed errors, rerun with: -v
+==3285== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3293== Memcheck, a memory error detector
+==3293== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3293== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3293== Command: ./qsort --gtest_filter=QSortTest.Test7
+==3293== Parent PID: 3292
+==3293== 
+==3293== 
+==3293== HEAP SUMMARY:
+==3293==     in use at exit: 72,704 bytes in 1 blocks
+==3293==   total heap usage: 217 allocs, 216 frees, 123,901 bytes allocated
+==3293== 
+==3293== LEAK SUMMARY:
+==3293==    definitely lost: 0 bytes in 0 blocks
+==3293==    indirectly lost: 0 bytes in 0 blocks
+==3293==      possibly lost: 0 bytes in 0 blocks
+==3293==    still reachable: 0 bytes in 0 blocks
+==3293==         suppressed: 72,704 bytes in 1 blocks
+==3293== 
+==3293== For counts of detected and suppressed errors, rerun with: -v
+==3293== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3299== Memcheck, a memory error detector
+==3299== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3299== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3299== Command: ./qsort --gtest_filter=QSortTest.Test8
+==3299== Parent PID: 3298
+==3299== 
+==3299== 
+==3299== HEAP SUMMARY:
+==3299==     in use at exit: 72,704 bytes in 1 blocks
+==3299==   total heap usage: 223 allocs, 222 frees, 125,693 bytes allocated
+==3299== 
+==3299== LEAK SUMMARY:
+==3299==    definitely lost: 0 bytes in 0 blocks
+==3299==    indirectly lost: 0 bytes in 0 blocks
+==3299==      possibly lost: 0 bytes in 0 blocks
+==3299==    still reachable: 0 bytes in 0 blocks
+==3299==         suppressed: 72,704 bytes in 1 blocks
+==3299== 
+==3299== For counts of detected and suppressed errors, rerun with: -v
+==3299== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3308== Memcheck, a memory error detector
+==3308== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3308== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3308== Command: ./qsort --gtest_filter=QSortTest.Test9
+==3308== Parent PID: 3307
+==3308== 
+==3308== 
+==3308== HEAP SUMMARY:
+==3308==     in use at exit: 72,704 bytes in 1 blocks
+==3308==   total heap usage: 223 allocs, 222 frees, 125,693 bytes allocated
+==3308== 
+==3308== LEAK SUMMARY:
+==3308==    definitely lost: 0 bytes in 0 blocks
+==3308==    indirectly lost: 0 bytes in 0 blocks
+==3308==      possibly lost: 0 bytes in 0 blocks
+==3308==    still reachable: 0 bytes in 0 blocks
+==3308==         suppressed: 72,704 bytes in 1 blocks
+==3308== 
+==3308== For counts of detected and suppressed errors, rerun with: -v
+==3308== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3314== Memcheck, a memory error detector
+==3314== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3314== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3314== Command: ./qsort --gtest_filter=QSortTest.Test10
+==3314== Parent PID: 3313
+==3314== 
+==3314== 
+==3314== HEAP SUMMARY:
+==3314==     in use at exit: 72,704 bytes in 1 blocks
+==3314==   total heap usage: 244 allocs, 243 frees, 140,501 bytes allocated
+==3314== 
+==3314== LEAK SUMMARY:
+==3314==    definitely lost: 0 bytes in 0 blocks
+==3314==    indirectly lost: 0 bytes in 0 blocks
+==3314==      possibly lost: 0 bytes in 0 blocks
+==3314==    still reachable: 0 bytes in 0 blocks
+==3314==         suppressed: 72,704 bytes in 1 blocks
+==3314== 
+==3314== For counts of detected and suppressed errors, rerun with: -v
+==3314== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3320== Memcheck, a memory error detector
+==3320== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3320== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3320== Command: ./qsort --gtest_filter=QSortTest.Test11
+==3320== Parent PID: 3319
+==3320== 
+==3320== 
+==3320== HEAP SUMMARY:
+==3320==     in use at exit: 72,704 bytes in 1 blocks
+==3320==   total heap usage: 233 allocs, 232 frees, 132,313 bytes allocated
+==3320== 
+==3320== LEAK SUMMARY:
+==3320==    definitely lost: 0 bytes in 0 blocks
+==3320==    indirectly lost: 0 bytes in 0 blocks
+==3320==      possibly lost: 0 bytes in 0 blocks
+==3320==    still reachable: 0 bytes in 0 blocks
+==3320==         suppressed: 72,704 bytes in 1 blocks
+==3320== 
+==3320== For counts of detected and suppressed errors, rerun with: -v
+==3320== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3329== Memcheck, a memory error detector
+==3329== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3329== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3329== Command: ./qsort --gtest_filter=QSortTest.Test12
+==3329== Parent PID: 3328
+==3329== 
+==3329== 
+==3329== HEAP SUMMARY:
+==3329==     in use at exit: 72,704 bytes in 1 blocks
+==3329==   total heap usage: 237 allocs, 236 frees, 255,193 bytes allocated
+==3329== 
+==3329== LEAK SUMMARY:
+==3329==    definitely lost: 0 bytes in 0 blocks
+==3329==    indirectly lost: 0 bytes in 0 blocks
+==3329==      possibly lost: 0 bytes in 0 blocks
+==3329==    still reachable: 0 bytes in 0 blocks
+==3329==         suppressed: 72,704 bytes in 1 blocks
+==3329== 
+==3329== For counts of detected and suppressed errors, rerun with: -v
+==3329== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+==3335== Memcheck, a memory error detector
+==3335== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3335== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3335== Command: ./qsort --gtest_filter=QSortTest.Test13
+==3335== Parent PID: 3334
+==3335== 
+==3335== 
+==3335== HEAP SUMMARY:
+==3335==     in use at exit: 72,704 bytes in 1 blocks
+==3335==   total heap usage: 240 allocs, 239 frees, 1,172,697 bytes allocated
+==3335== 
+==3335== LEAK SUMMARY:
+==3335==    definitely lost: 0 bytes in 0 blocks
+==3335==    indirectly lost: 0 bytes in 0 blocks
+==3335==      possibly lost: 0 bytes in 0 blocks
+==3335==    still reachable: 0 bytes in 0 blocks
+==3335==         suppressed: 72,704 bytes in 1 blocks
+==3335== 
+==3335== For counts of detected and suppressed errors, rerun with: -v
+==3335== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+

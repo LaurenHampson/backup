@@ -7,5 +7,5 @@ Running main() from gtest_main.cc
 [----------] 1 test from RotateTest (61 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test case ran. (87 ms total)
+[==========] 1 test from 1 test case ran. (86 ms total)
 [  PASSED  ] 1 test.

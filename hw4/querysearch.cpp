@@ -5,6 +5,7 @@
 #include <ctype.h>
 #include <cstring>
 #include <string>
+#include <sstream>
 #include <fstream>
 #include <iostream>
 #include <exception>
@@ -12,6 +13,7 @@
 #include <map>
 #include <iterator>
 #include <vector>
+#include "setutility.h"
 
 using namespace std;
 
@@ -32,30 +34,23 @@ QuerySearch:: ~QuerySearch()
 	fileWebPageMap.clear();
 	wordFilesMap.clear();
 }
-	
-		void QuerySearch::pageParser (std::ifstream &input, Parser* parser) // read in new file from the input
+
+
+		void QuerySearch::pageParser (std::ifstream &input, Parser* parser) 
 		{
 					
-			std:: string name;
+			std::string name;
+
 			while(std::getline(input, name))
 			{
 					std::set<std::string> words;
 					std::set<std::string> links;
 
-					std::cout << name << std::endl;
 
 					parser->parse(name, words, links);
-
 					WebPage* page = new WebPage(name);
 					page->getWords(words);
-
 					page->outgoingLink(links);
-
-				/*	std::set<std::string>::iterator i;
-					for (i = links.begin(); i != links.end(); i++)
-					{
-						page->outgoingLink(*i);
-					}*/
 
 					fileWebPageMap.insert(std::make_pair(name, page));
 
@@ -82,13 +77,12 @@ QuerySearch:: ~QuerySearch()
 					links.clear();
 				
 			}
-//use find intead of iterating through 
 			std::map<std::string, WebPage *>::iterator it;
 			
 			for (it = fileWebPageMap.begin(); it !=fileWebPageMap.end(); it++)
 			{
 				std::set<string> outgoing = it->second->outgoingLinks();
-				std::set<std::string>::iterator out= outgoing.begin();
+				std::set<std::string>::iterator out = outgoing.begin();
 				
 				while(out !=outgoing.end())
 				{
@@ -116,7 +110,6 @@ void QuerySearch::search(const std::string n, std::ofstream &output)
 		for (it = fileWebPageMap.begin(); it !=fileWebPageMap.end(); it++)
 		{
 			std::set<std::string> outSet = it->second->printWords();
-			//std::set<std::string>::iterator out = it->second->printWords().find(n);
 			if (outSet.find(n) != outSet.end())
 			{
 				pages.push_back(it->first);
@@ -136,125 +129,73 @@ void QuerySearch::search(const std::string n, std::ofstream &output)
 
 
 }
-/*void QuerySearch::setMaker(const std::string n, std::set<string> &s )
+
+std::set<std::string> QuerySearch::searcher(const std::string n)
 {
 	
+	set<string> pages;
 
-	std::map<std::string, WebPage *>::iterator it = fileWebPageMap.begin();
-			
-		while( it !=fileWebPageMap.end())
-		{
-			std::set<std::string> outSet = it->second->printWords();
-			//std::set<std::string>::iterator out = it->second->printWords().find(n);
-			if (outSet.find(n) != outSet.end())
-			{
-				s.insert(it->first);
-			}
-			it++;
-			
-		}
 
-}*/
-std::set<string> QuerySearch::intersection(std::set<string> &s1, std::set<string> &s2)
-{
-	std::set<string> tempSet;
-	std::set<string>::iterator it = s1.begin();
+	std::map<std::string, std::set<std::string> >::iterator it = wordFilesMap.find(n);
 
-	while(it!=s1.end())
+	if (it != wordFilesMap.end())
 	{
-		if (s2.count(*it)>0)
-		{
-			tempSet.insert(*it);
-		}
-		it++;
+		pages = it->second;
 	}
-
-	
-	return tempSet;
 		
+
+		return pages;
+
 }
-void QuerySearch::andQ(std::queue<string> &q, std::ofstream &output)
-{
-	
-	std::set<string> intersect;
 
-	std::map<std::string,std::set<std::string> >::iterator it = wordFilesMap.find(lowerCase(q.front()));
-	if (it!= wordFilesMap.end())
-	{
-		std::set<string>::iterator iter = (it->second).begin();
-		while(iter != it->second.end())
+void QuerySearch::andQ(std::vector<string> &q, std::ofstream &output)
+{
+	std::set<std::string> set = searcher(lowerCase(q[1]));
+	
+	if (q.size()>2)
+	{for (unsigned int i = 1; i < q.size(); i++)
 		{
-			intersect.insert(*iter);
-			iter++;
+			std::set<std::string> temp = searcher(lowerCase(q[i]));
+			
+				
+				set = setIntersect(set, temp);
+			
+			
 		}
-		
 	}
 
-	q.pop();
-	
-		while(q.size() > 0)
-		{
-			std::set<string> tempSet;
-
-
-			std::map<std::string,std::set<std::string> >::iterator it = wordFilesMap.find(lowerCase(q.front()));
-			if (it!= wordFilesMap.end())
-			{
-				std::set<string>::iterator iter = (it->second).begin();
-				while(iter != it->second.end())
+		std::set<string>::iterator it;
+				output << set.size() << std::endl;
+				for (it = set.begin(); it != set.end(); it++)
 				{
-					tempSet.insert(*iter);
-					iter++;
+					output << *it << std::endl;
 				}
-
-			}
-			
-			q.pop();
-			intersect = intersection(tempSet, intersect);
-
-		}
-		if (q.size() == 0)
-		{
-			std::set<string>::iterator it;
-			output << intersect.size() << std::endl;
-			for (it = intersect.begin(); it != intersect.end(); it++)
-			{
-				output << *it << std::endl;
-			}
-
-			return;
-		}
-	
-
+				
+		
+		
 }
-void QuerySearch::orQ(std::queue<string> &q, std::ofstream &output)
+	
+void QuerySearch::orQ(std::vector<string> &q, std::ofstream &output)
 {
-	std::set<string> intersect;
-	while (q.size()>0)
-	{
-		std::map<std::string,std::set<std::string> >::iterator it = wordFilesMap.find(lowerCase(q.front()));
-	if (it!= wordFilesMap.end())
-	{
-		intersect = it->second;
-	}
-
-	//setMaker(lowerCase(q.front()), intersect);
-	
-		q.pop();
-	}
-
-	if (q.size() == 0)
+	std::set<std::string> set;
+	for (unsigned int i = 1; i < q.size(); i++)
 		{
-			std::set<string>::iterator it;
-			output << intersect.size() << std::endl;
-			for (it = intersect.begin(); it != intersect.end(); it++)
-			{
-				output << *it << std::endl;
-			}
-
-			return;
+			std::set<std::string> temp = searcher(lowerCase(q[i]));
+			if(i ==1)
+				{
+					set = temp;
+				}
+				set = setUnion(set, temp);
 		}
-}
+
+		std::set<string>::iterator it;
+				output << set.size() << std::endl;
+				for (it = set.begin(); it != set.end(); it++)
+				{
+					output << *it << std::endl;
+				}
+		
+	}
 
 void QuerySearch::inc(std::string n, std::ofstream &output)
 {
@@ -270,6 +211,7 @@ void QuerySearch::inc(std::string n, std::ofstream &output)
 		while (out != incoming.end())
 		{
 			output << *out << std::endl;
+			out++;
 		}
 	}	
 
@@ -289,51 +231,135 @@ void QuerySearch::out(std::string n, std::ofstream &output)
 		while (out != outgoing.end())
 		{
 			output << *out << std::endl;
+			out++;
 		}
 	}	
 
 	return;
 }
 
-/*void QuerySearch::printPage(std::string n, std::ofstream &output)
-{
-	output << n << std::endl;
+std::vector<std::string> splits(const std::string s, std::vector<string>& temp, char delimiter) {
+
+  	std::stringstream ss;
+
+   	ss << s;
+
+   	std::string line;
 
 
-	while()
-}*/
 
-int QuerySearch::query (const std::string n, std::queue<string> &q, std::ofstream &output)	
-{
-	if (n == "and")
+  	while(getline(ss, line, delimiter))
+  	{
+
+   		temp.push_back(line);
+
+   	}
+
+   	ss.str("");
+   	ss.clear();
+
+   	return temp;
+
+}
+
+std::vector<std::string> printsplits(const std::string s, std::vector<string>& temp) {
+
+  	std::stringstream ss;
+
+   	ss << s;
+
+   	std::string line;
+
+
+while(getline(ss, line, '('))
+  	{
+
+   		temp.push_back(line);
+   		ss.ignore(256, ')');
+   		
+   		
+   	}
+  
+
+   	ss.str("");
+   	ss.clear();
+
+   	return temp;
+
+}
+
+
+	void QuerySearch::print(const std::string n, std::ofstream &output)
 	{
-		andQ(q, output);
+		output << n << std::endl;
+		std::ifstream in(n);
+		std::string line;
+		while(std::getline(in, line))
+		{
+			std::vector<string> split;
+
+			printsplits(line, split);
+
+			for (unsigned int i = 0; i <split.size(); i++)
+			{
+				output << split[i];
+			}
+
+			
+			output << std::endl;
+		}
+		
+		
+		
+
+			in.close();
+	}
+
+int QuerySearch::query (const std::string n, std::ofstream &output)	
+{
+	std::vector<string> split;
+
+	splits(n, split, ' ');
+
+	split[0] = lowerCase(split[0]);
+
+	if (split.size() == 1)
+	{
+		search(split[0], output);
 		return 0;
 	}
-	if (n == "or")
+
+	if (split[0] == "and")
 	{
-		orQ(q, output);
+		andQ(split, output);
 		return 0;
 	}
 	
-	if (n == "incoming")
+	if (split[0] == "or")
 	{
-		inc(q.front(), output);
-		q.pop();
-		return 0;
-
-	}
-	if (n == "outgoing")
-	{
-		out(q.front(), output);
-		q.pop();
-		return 0;
-	}
-	if (n == "print")
-	{
+		orQ(split, output);
 		return 0;
 	}
 	
+	if (split[0] == "incoming")
+	{
+		inc(split[1], output);
+		return 0;
+	}
+	if(split[0] == "outgoing")
+	{
+		out(split[1], output);
+		return 0;
+		
+	}
+	
+
+if (split[0] == "print")
+	{
+		print(split[1], output);
+		return 0;
+	}
+
 	return -1;
 	
 }

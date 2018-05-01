@@ -1,0 +1,145 @@
+Running main() from gtest_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SplayTest
+[ RUN      ] SplayTest.Test25_RemoveRecursiveSplay
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 23
+Expected: src->getKey()
+Which is: 9
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 23
+Expected: src->getValue()
+Which is: 9
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 16
+Expected: src->getKey()
+Which is: 8
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 16
+Expected: src->getValue()
+Which is: 8
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 9
+Expected: src->getKey()
+Which is: 6
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 9
+Expected: src->getValue()
+Which is: 6
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 15
+Expected: src->getKey()
+Which is: 4
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 15
+Expected: src->getValue()
+Which is: 4
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: false
+Expected: src->hasRight()
+Which is: true
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 11
+Expected: src->getKey()
+Which is: 3
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 11
+Expected: src->getValue()
+Which is: 3
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 22
+Expected: src->getKey()
+Which is: 5
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 22
+Expected: src->getValue()
+Which is: 5
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 28
+Expected: src->getKey()
+Which is: 23
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 28
+Expected: src->getValue()
+Which is: 23
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: false
+Expected: src->hasRight()
+Which is: true
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 24
+Expected: src->getKey()
+Which is: 16
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 24
+Expected: src->getValue()
+Which is: 16
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: false
+Expected: src->hasRight()
+Which is: true
+splay_test/splay_gtest_header.h:171: Failure
+Value of: end
+  Actual: 8-byte object <A8-04 CE-05 00-00 00-00>
+Expected: src
+Which is: 8-byte object <18-04 CE-05 00-00 00-00>
+[  FAILED  ] SplayTest.Test25_RemoveRecursiveSplay (193 ms)
+[----------] 1 test from SplayTest (200 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (232 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SplayTest.Test25_RemoveRecursiveSplay
+
+ 1 FAILED TEST

@@ -1,0 +1,60 @@
+Note: Google Test filter = FunctorTest.Test1
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from FunctorTest
+[ RUN      ] FunctorTest.Test1
+[       OK ] FunctorTest.Test1 (48 ms)
+[----------] 1 test from FunctorTest (53 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (86 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = FunctorTest.Test2
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from FunctorTest
+[ RUN      ] FunctorTest.Test2
+[       OK ] FunctorTest.Test2 (45 ms)
+[----------] 1 test from FunctorTest (51 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (79 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = FunctorTest.Test3
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from FunctorTest
+[ RUN      ] FunctorTest.Test3
+[       OK ] FunctorTest.Test3 (53 ms)
+[----------] 1 test from FunctorTest (58 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (96 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = FunctorTest.Test4
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from FunctorTest
+[ RUN      ] FunctorTest.Test4
+[       OK ] FunctorTest.Test4 (77 ms)
+[----------] 1 test from FunctorTest (82 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (110 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = FunctorTest.Test5
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from FunctorTest
+[ RUN      ] FunctorTest.Test5
+[       OK ] FunctorTest.Test5 (56 ms)
+[----------] 1 test from FunctorTest (61 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (96 ms total)
+[  PASSED  ] 1 test.
+

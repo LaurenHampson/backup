@@ -1,0 +1,240 @@
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/test1.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/test1.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/test2.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/test2.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/test2.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = int]’:
+cache_test/test2.cpp:5:18:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/test2.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/test3.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/test3.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/test3.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = int]’:
+cache_test/test3.cpp:5:18:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/test3.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/test4.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/test4.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/test5.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/test5.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/test6.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/test6.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/stress1.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/stress1.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/stress2.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/stress2.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/stress3.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/stress3.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’
+In file included from cache_test/cache_gtest_header.h:1:0,
+                 from cache_test/stress4.cpp:1:
+cache_test/../../../cacheLRU.h: In instantiation of ‘void cacheLRU<Key, Value>::put(const std::pair<const _Key, _Tp>&) [with Key = int; Value = char]’:
+cache_test/cache_gtest_header.h:45:50:   required from here
+cache_test/../../../cacheLRU.h:141:3: error: no matching function for call to ‘std::deque<std::__cxx11::basic_string<char> >::push_back(const int&)’
+   word.push_back(keyValuePair.first);
+   ^
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /usr/include/c++/5/queue:60,
+                 from cache_test/../../../cacheLRU.h:12,
+                 from cache_test/cache_gtest_header.h:1,
+                 from cache_test/stress4.cpp:1:
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(const value_type& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1516:7: note:   no known conversion for argument 1 from ‘const int’ to ‘const value_type& {aka const std::__cxx11::basic_string<char>&}’
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note: candidate: void std::deque<_Tp, _Alloc>::push_back(std::deque<_Tp, _Alloc>::value_type&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::deque<_Tp, _Alloc>::value_type = std::__cxx11::basic_string<char>]
+       push_back(value_type&& __x)
+       ^
+/usr/include/c++/5/bits/stl_deque.h:1531:7: note:   no known conversion for argument 1 from ‘const int’ to ‘std::deque<std::__cxx11::basic_string<char> >::value_type&& {aka std::__cxx11::basic_string<char>&&}’

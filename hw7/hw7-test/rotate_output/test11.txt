@@ -3,9 +3,9 @@ Running main() from gtest_main.cc
 [----------] Global test environment set-up.
 [----------] 1 test from RotateTest
 [ RUN      ] RotateTest.Test11_SameKeysDifferent
-[       OK ] RotateTest.Test11_SameKeysDifferent (54 ms)
-[----------] 1 test from RotateTest (59 ms total)
+[       OK ] RotateTest.Test11_SameKeysDifferent (70 ms)
+[----------] 1 test from RotateTest (76 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test case ran. (92 ms total)
+[==========] 1 test from 1 test case ran. (134 ms total)
 [  PASSED  ] 1 test.

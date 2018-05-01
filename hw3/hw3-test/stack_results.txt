@@ -1,0 +1,164 @@
+Note: Google Test filter = StackStrTest.Test1*
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from StackStrTest
+[ RUN      ] StackStrTest.Test1
+[       OK ] StackStrTest.Test1 (9 ms)
+[ RUN      ] StackStrTest.Test10
+[       OK ] StackStrTest.Test10 (22 ms)
+[ RUN      ] StackStrTest.Test11
+[       OK ] StackStrTest.Test11 (46 ms)
+[ RUN      ] StackStrTest.Test12
+[       OK ] StackStrTest.Test12 (3908 ms)
+[ RUN      ] StackStrTest.Test13
+[       OK ] StackStrTest.Test13 (381168 ms)
+[----------] 5 tests from StackStrTest (385159 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (385193 ms total)
+[  PASSED  ] 5 tests.
+
+Note: Google Test filter = StackStrTest.Test2*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test2
+[       OK ] StackStrTest.Test2 (9 ms)
+[----------] 1 test from StackStrTest (14 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (47 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test3*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test3
+[       OK ] StackStrTest.Test3 (21 ms)
+[----------] 1 test from StackStrTest (29 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (65 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test4*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test4_Empty
+[       OK ] StackStrTest.Test4_Empty (30 ms)
+[----------] 1 test from StackStrTest (36 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (76 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test5*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test5
+[       OK ] StackStrTest.Test5 (14 ms)
+[----------] 1 test from StackStrTest (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (48 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test6*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test6
+[       OK ] StackStrTest.Test6 (36 ms)
+[----------] 1 test from StackStrTest (43 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (85 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test7*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test7
+[       OK ] StackStrTest.Test7 (15 ms)
+[----------] 1 test from StackStrTest (22 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (65 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test8*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test8
+[       OK ] StackStrTest.Test8 (26 ms)
+[----------] 1 test from StackStrTest (31 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (61 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test9*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test9
+[       OK ] StackStrTest.Test9 (101 ms)
+[----------] 1 test from StackStrTest (107 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (149 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test10*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test10
+[       OK ] StackStrTest.Test10 (27 ms)
+[----------] 1 test from StackStrTest (32 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (62 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test11*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test11
+[       OK ] StackStrTest.Test11 (50 ms)
+[----------] 1 test from StackStrTest (55 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (86 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test12*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test12
+[       OK ] StackStrTest.Test12 (3760 ms)
+[----------] 1 test from StackStrTest (3765 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (3795 ms total)
+[  PASSED  ] 1 test.
+
+Note: Google Test filter = StackStrTest.Test13*
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from StackStrTest
+[ RUN      ] StackStrTest.Test13
+[       OK ] StackStrTest.Test13 (420583 ms)
+[----------] 1 test from StackStrTest (420589 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (420625 ms total)
+[  PASSED  ] 1 test.
+

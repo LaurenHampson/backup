@@ -1,0 +1,45 @@
+==3367== Memcheck, a memory error detector
+==3367== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3367== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==3367== Command: ./exception
+==3367== Parent PID: 3366
+==3367== 
+==3367== 
+==3367== HEAP SUMMARY:
+==3367==     in use at exit: 72,938 bytes in 5 blocks
+==3367==   total heap usage: 276 allocs, 271 frees, 131,281 bytes allocated
+==3367== 
+==3367== 117 (40 direct, 77 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 5
+==3367==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3367==    by 0x405197: LengthMismatchTest_Test4_Test::TestBody() (exception_gtest.cpp:60)
+==3367==    by 0x429A22: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x4213E3: testing::Test::Run() [clone .part.368] (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x42169C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x421884: testing::TestCase::Run() [clone .part.370] (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x423D30: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x424140: testing::UnitTest::Run() (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x405B2B: RUN_ALL_TESTS() (gtest.h:2288)
+==3367==    by 0x404D90: main (exception_gtest.cpp:24)
+==3367== 
+==3367== 117 (40 direct, 77 indirect) bytes in 1 blocks are definitely lost in loss record 4 of 5
+==3367==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3367==    by 0x4053EA: LengthMismatchTest_Test5_Test::TestBody() (exception_gtest.cpp:73)
+==3367==    by 0x429A22: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x4213E3: testing::Test::Run() [clone .part.368] (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x42169C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x421884: testing::TestCase::Run() [clone .part.370] (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x423D30: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x424140: testing::UnitTest::Run() (in /home/cs104/Desktop/cs104/hw-lhampson/hw5/hw5-test/exception)
+==3367==    by 0x405B2B: RUN_ALL_TESTS() (gtest.h:2288)
+==3367==    by 0x404D90: main (exception_gtest.cpp:24)
+==3367== 
+==3367== LEAK SUMMARY:
+==3367==    definitely lost: 80 bytes in 2 blocks
+==3367==    indirectly lost: 154 bytes in 2 blocks
+==3367==      possibly lost: 0 bytes in 0 blocks
+==3367==    still reachable: 0 bytes in 0 blocks
+==3367==         suppressed: 72,704 bytes in 1 blocks
+==3367== 
+==3367== For counts of detected and suppressed errors, rerun with: -v
+==3367== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+

@@ -3,19 +3,18 @@ CXX = g++
 CPPFLAGS = -g -Wall
 
 
+LengthMismatch: LengthMismatch.h LengthMismatch.cpp
 
-qsorttest: qsorttest.cpp functor.h functor.cpp
-
-	$(CXX) $(CPPFLAGS) $^ -o qsorttest
+	$(CXX) $(CPPFLAGS) $^ -c
 
 
-functortest: functortest.cpp functor.h functor.cpp
+functor: functor.h functor.cpp
 
-	$(CXX) $(CPPFLAGS) $^ -o functortest
+	$(CXX) $(CPPFLAGS) $^ -c
 
-Thanksgiving: Thanksgiving.cpp lengthmismatch.h lengthmismatch.cpp 
+Thanksgiving: Thanksgiving.cpp LengthMismatch.h LengthMismatch.cpp
 
-	$(CXX) $(CPPFLAGS) $^ -o Thanksgiving
+	$(CXX) $(CPPFLAGS) $^ -c 
 
 
 .PHONY: clean
@@ -24,6 +23,6 @@ Thanksgiving: Thanksgiving.cpp lengthmismatch.h lengthmismatch.cpp
 
 clean:
 
-	rm -rf *.o qsorttest
-	rm -rf *.o functortest
+	rm -rf *.o LengthMismatch
+	rm -rf *.o functor
 	rm -rf *.o Thanksgiving

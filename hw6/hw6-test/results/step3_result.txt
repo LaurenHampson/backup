@@ -1,0 +1,84 @@
+
+	FOUND: step3/config3/data0.txt
+	FOUND: step3/config3/data1.txt
+
+Test config3 passed
+
+	FOUND: step3/config4/data0.txt
+	FOUND: step3/config4/data1.txt
+	FOUND: step3/config4/data2.txt
+	FOUND: step3/config4/data3.txt
+
+Test config4 passed
+
+	FOUND: step3/config5/data0.txt
+	FOUND: step3/config5/data1.txt
+	FOUND: step3/config5/data3.txt
+	FOUND: step3/config5/data5.txt
+	FOUND: step3/config5/data4.txt
+	FOUND: step3/config5/data2.txt
+
+Test config5 passed
+
+	FOUND: step3/config6/data0.txt
+	FOUND: step3/config5/data1.txt
+	FOUND: step3/config5/data3.txt
+	FOUND: step3/config5/data5.txt
+	FOUND: step3/config5/data4.txt
+
+Test config6 passed
+
+	FOUND: step3/config7/data0.txt
+	EXTRA: step3/config7/data0.txt
+
+Test config7 failed
+
+	FOUND: step3/config8/data0.txt
+	EXTRA: step3/config8/data1.txt
+
+Test config8 failed
+
+	FOUND: step3/config9/data0.txt
+	FOUND: step3/config9/data2.txt
+	FOUND: step3/config9/data1.txt
+
+Test config9 passed
+
+	FOUND: step3/config10/data0.txt
+	FOUND: step3/config10/data1.txt
+	FOUND: step3/config10/data2.txt
+	EXTRA: step3/config10/data2.txt
+
+Test config10 failed
+
+	FOUND: step3/config11/data0.txt
+	FOUND: step3/config11/data1.txt
+	FOUND: step3/config11/data2.txt
+	FOUND: step3/config11/data3.txt
+	FOUND: step3/config11/data4.txt
+	FOUND: step3/config11/data5.txt
+
+Test config11 passed
+
+	FOUND: step3/config12/data0.txt
+	FOUND: step3/config12/data2.txt
+	FOUND: step3/config12/data3.txt
+	FOUND: step3/config12/data5.txt
+	FOUND: step3/config12/data7.txt
+	FOUND: step3/config12/data8.txt
+	FOUND: step3/config12/data10.txt
+	FOUND: step3/config12/data9.txt
+	FOUND: step3/config12/data11.txt
+	FOUND: step3/config12/data4.txt
+	FOUND: step3/config12/data6.txt
+	FOUND: step3/config12/data1.txt
+	EXTRA: step3/config12/data6.txt
+	EXTRA: step3/config12/data9.txt
+
+Test config12 failed
+
+Failed 4 tests:
+	Test config7
+	Test config8
+	Test config10
+	Test config12

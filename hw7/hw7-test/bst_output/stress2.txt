@@ -1,0 +1,14 @@
+Running main() from gtest_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BSTTest
+[ RUN      ] BSTTest.Stress2_Balance
+bst1: 13.315
+bst2: 22.895
+bst3: 45.287
+[       OK ] BSTTest.Stress2_Balance (2229 ms)
+[----------] 1 test from BSTTest (2235 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (2258 ms total)
+[  PASSED  ] 1 test.

@@ -1,0 +1,18 @@
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from LengthMismatchTest
+[ RUN      ] LengthMismatchTest.Test1
+[       OK ] LengthMismatchTest.Test1 (15 ms)
+[ RUN      ] LengthMismatchTest.Test2
+[       OK ] LengthMismatchTest.Test2 (3 ms)
+[ RUN      ] LengthMismatchTest.Test3
+[       OK ] LengthMismatchTest.Test3 (3 ms)
+[ RUN      ] LengthMismatchTest.Test4
+[       OK ] LengthMismatchTest.Test4 (2 ms)
+[ RUN      ] LengthMismatchTest.Test5
+[       OK ] LengthMismatchTest.Test5 (2 ms)
+[----------] 5 tests from LengthMismatchTest (31 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (64 ms total)
+[  PASSED  ] 5 tests.

@@ -1,0 +1,2 @@
+[PASS] [VPASS] config1 (1.188)
+[PASS] [VPASS] config2 (1.248)

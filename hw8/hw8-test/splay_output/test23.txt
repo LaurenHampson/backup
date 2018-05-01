@@ -1,0 +1,50 @@
+Running main() from gtest_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SplayTest
+[ RUN      ] SplayTest.Test23_RemoveTwoChildrenSplayPred
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:191: Failure
+Value of: left != nullptr
+  Actual: false
+Expected: src->hasLeft()
+Which is: true
+splay_test/splay_gtest_header.h:192: Failure
+Value of: right != nullptr
+  Actual: true
+Expected: src->hasRight()
+Which is: false
+splay_test/splay_gtest_header.h:200: Failure
+Value of: right->getParent()
+  Actual: NULL
+Expected: cmp
+Which is: 0x5ce0560
+splay_test/splay_gtest_header.h:187: Failure
+Value of: cmp->getKey()
+  Actual: 8
+Expected: src->getKey()
+Which is: 1
+splay_test/splay_gtest_header.h:188: Failure
+Value of: cmp->getValue()
+  Actual: 8
+Expected: src->getValue()
+Which is: 1
+splay_test/splay_gtest_header.h:171: Failure
+Value of: end
+  Actual: 8-byte object <20-03 CE-05 00-00 00-00>
+Expected: src
+Which is: 8-byte object <08-03 CE-05 00-00 00-00>
+[  FAILED  ] SplayTest.Test23_RemoveTwoChildrenSplayPred (156 ms)
+[----------] 1 test from SplayTest (164 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (191 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SplayTest.Test23_RemoveTwoChildrenSplayPred
+
+ 1 FAILED TEST

@@ -9,7 +9,7 @@ using namespace std;
 
 		bool NumStrComp::operator()(const string& lhs, const string& rhs)
 		{
-			
+			//initialize map with proper values for each character
 				lookUp.insert(std::make_pair('0',0 ));
 				lookUp.insert(std::make_pair('1',1 ));
 				lookUp.insert(std::make_pair('2',2 ));
@@ -73,6 +73,10 @@ using namespace std;
 				lookUp.insert(std::make_pair('z',35 ));
 				lookUp.insert(std::make_pair('Z',35 ));
 			
+			//parse through both the lhs and rhs by each character and add its value according to the
+			//map to the sum
+
+
 			int sum1 = 0;
 			int sum2 = 0;
 
@@ -114,6 +118,7 @@ using namespace std;
 			rightss.clear();
 			rightss.str("");
 
+			//if the sums are different, the work is done
 			if (sum1 > sum2)
 			{
 				return false;
@@ -124,7 +129,7 @@ using namespace std;
 				return true;
 			}
 			
-
+			//if the sums are equal we need to sort lexicographically
 			else
 			{
 				bool checker = false;
@@ -152,6 +157,7 @@ using namespace std;
 
 				int i = 0;
 
+				// if at any point x>y return false, and if at any point x <y return true
 				while (checker == false && i < len)
 				{
 					leftss>>x;
@@ -171,10 +177,24 @@ using namespace std;
 						break;
 					}
 
+					if (x<y)
+					{
+						checker = true;
+						leftss.clear();
+						leftss.str("");
+						rightss.clear();
+						rightss.str("");
+
+						return true;
+
+						break;	
+					}
+
 					i++;
 
 				}
 	
+			//check one last time, if the strings are completley equal, return false
 				if (checker == false && size1 == size2)
 				{
 					leftss.clear();

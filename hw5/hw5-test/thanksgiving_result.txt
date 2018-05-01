@@ -1,0 +1,45 @@
+Running main() from gtest_main.cc
+[==========] Running 11 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 11 tests from ThanksgivingTest
+[ RUN      ] ThanksgivingTest.Test1
+[       OK ] ThanksgivingTest.Test1 (42 ms)
+[ RUN      ] ThanksgivingTest.Test2
+[       OK ] ThanksgivingTest.Test2 (33 ms)
+[ RUN      ] ThanksgivingTest.Test3
+[       OK ] ThanksgivingTest.Test3 (9 ms)
+[ RUN      ] ThanksgivingTest.Test4
+[       OK ] ThanksgivingTest.Test4 (4 ms)
+[ RUN      ] ThanksgivingTest.Test5
+Input data structures have lengths 3 and 2
+thanksgiving_gtest.cpp:99: Failure
+Expected: assignPlates(turkey, potatos) throws an exception of type LengthMismatch.
+  Actual: it throws nothing.
+[  FAILED  ] ThanksgivingTest.Test5 (64 ms)
+[ RUN      ] ThanksgivingTest.Test6
+Input data structures have lengths 3 and 2
+thanksgiving_gtest.cpp:111: Failure
+Expected: assignPlates(turkey, potatos) throws an exception of type LengthMismatch.
+  Actual: it throws nothing.
+Input data structures have lengths 3 and 2
+[  FAILED  ] ThanksgivingTest.Test6 (9 ms)
+[ RUN      ] ThanksgivingTest.Test7
+[       OK ] ThanksgivingTest.Test7 (10 ms)
+[ RUN      ] ThanksgivingTest.Test8
+[       OK ] ThanksgivingTest.Test8 (13 ms)
+[ RUN      ] ThanksgivingTest.Test9
+[       OK ] ThanksgivingTest.Test9 (99 ms)
+[ RUN      ] ThanksgivingTest.Test10
+[       OK ] ThanksgivingTest.Test10 (731 ms)
+[ RUN      ] ThanksgivingTest.Test11
+[       OK ] ThanksgivingTest.Test11 (8343 ms)
+[----------] 11 tests from ThanksgivingTest (9366 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test case ran. (9408 ms total)
+[  PASSED  ] 9 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] ThanksgivingTest.Test5
+[  FAILED  ] ThanksgivingTest.Test6
+
+ 2 FAILED TESTS

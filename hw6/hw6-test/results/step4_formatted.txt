@@ -1,0 +1,5 @@
+[PASS] [VPASS] config13 (1.312)
+[PASS] [VPASS] config14 (1.084)
+[PASS] [VPASS] config15 (1.488)
+[PASS] [VPASS] config16 (1.752)
+[PASS] [VPASS] config17 (1.296)

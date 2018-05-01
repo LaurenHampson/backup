@@ -1,0 +1,154 @@
+
+	FOUND: 9
+	FOUND: step5/data/data3.txt
+	FOUND: step5/data/data8.txt
+	FOUND: step5/data/data9.txt
+	FOUND: step5/data/data6.txt
+	FOUND: step5/data/data7.txt
+	FOUND: step5/data/data2.txt
+	FOUND: step5/data/data4.txt
+	FOUND: step5/data/data5.txt
+	FOUND: step5/data/data10.txt
+
+Test config18 passed
+
+	FOUND: 5
+	FOUND: step5/data/data3.txt
+	FOUND: step5/data/data1.txt
+	FOUND: step5/data/data2.txt
+	FOUND: step5/data/data4.txt
+	FOUND: step5/data/data5.txt
+
+Test config19 passed
+
+	FOUND: 8
+	FOUND: step5/data/data13.txt
+	FOUND: step5/data/data15.txt
+	FOUND: step5/data/data17.txt
+	FOUND: step5/data/data18.txt
+	FOUND: step5/data/data16.txt
+	FOUND: step5/data/data14.txt
+	FOUND: step5/data/data12.txt
+	FOUND: step5/data/data11.txt
+
+Test config20 passed
+
+	FOUND: 13
+	FOUND: step5/data/data8.txt
+	FOUND: step5/data/data13.txt
+	FOUND: step5/data/data15.txt
+	FOUND: step5/data/data17.txt
+	FOUND: step5/data/data18.txt
+	FOUND: step5/data/data16.txt
+	FOUND: step5/data/data9.txt
+	FOUND: step5/data/data6.txt
+	FOUND: step5/data/data14.txt
+	FOUND: step5/data/data7.txt
+	FOUND: step5/data/data12.txt
+	FOUND: step5/data/data11.txt
+	FOUND: step5/data/data10.txt
+
+Test config21 passed
+
+	FOUND: 7
+	FOUND: step5/data/data13.txt
+	FOUND: step5/data/data17.txt
+	FOUND: step5/data/data14.txt
+	FOUND: step5/data/data18.txt
+	FOUND: step5/data/data12.txt
+	FOUND: step5/data/data16.txt
+	FOUND: step5/data/data11.txt
+
+Test config22 passed
+
+	FOUND: 7
+	FOUND: step5/data/data15.txt
+	FOUND: step5/data/data13.txt
+	FOUND: step5/data/data17.txt
+	FOUND: step5/data/data18.txt
+	FOUND: step5/data/data16.txt
+	FOUND: step5/data/data14.txt
+	FOUND: step5/data/data12.txt
+
+Test config23 passed
+
+	FOUND: 2
+	FOUND: step5/data/data20.txt
+	FOUND: step5/data/data19.txt
+
+Test config24 passed
+
+	FOUND: 3
+	FOUND: step5/data/data23.txt
+	FOUND: step5/data/data22.txt
+	FOUND: step5/data/data21.txt
+
+Test config25 passed
+
+	FOUND: 4
+	FOUND: step5/data/data26.txt
+	FOUND: step5/data/data24.txt
+	FOUND: step5/data/data25.txt
+	FOUND: step5/data/data27.txt
+
+Test config26 passed
+
+	FOUND: 3
+	FOUND: step5/data/data30.txt
+	FOUND: step5/data/data29.txt
+	FOUND: step5/data/data28.txt
+
+Test config27 passed
+
+	FOUND: 7
+	FOUND: step5/data/data33.txt
+	FOUND: step5/data/data34.txt
+	FOUND: step5/data/data35.txt
+	FOUND: step5/data/data36.txt
+	FOUND: step5/data/data32.txt
+	FOUND: step5/data/data31.txt
+	FOUND: step5/data/data37.txt
+
+Test config28 passed
+
+	FOUND: 2
+	FOUND: step5/data/data39.txt
+	FOUND: step5/data/data38.txt
+
+Test config29 passed
+
+	FOUND: 7
+	FOUND: step5/data/data43.txt
+	FOUND: step5/data/data47.txt
+	FOUND: step5/data/data48.txt
+	FOUND: step5/data/data42.txt
+	FOUND: step5/data/data46.txt
+	FOUND: step5/data/data41.txt
+	FOUND: step5/data/data45.txt
+
+Test config30 passed
+
+	FOUND: 8
+	FOUND: step5/data/data56.txt
+	FOUND: step5/data/data55.txt
+	FOUND: step5/data/data54.txt
+	FOUND: step5/data/data53.txt
+	FOUND: step5/data/data52.txt
+	FOUND: step5/data/data51.txt
+	FOUND: step5/data/data50.txt
+	FOUND: step5/data/data49.txt
+
+Test config31 passed
+
+WARNING: Fewer lines in comp file than in source file.
+	MISSING: 1000
+	MISSING: step5/data/data1996.txt
+	MISSING: step5/data/data1995.txt
+	MISSING: step5/data/data1997.txt
+	MISSING: step5/data/data1998.txt
+	MISSING: step5/data/data1999.txt
+
+Test config32 failed
+
+Failed 1 tests:
+	Test config32

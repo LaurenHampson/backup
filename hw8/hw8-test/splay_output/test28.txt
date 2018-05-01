@@ -1,0 +1,11 @@
+Running main() from gtest_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from SplayTest
+[ RUN      ] SplayTest.Test28_RemoveMinLeafNotMin
+[       OK ] SplayTest.Test28_RemoveMinLeafNotMin (52 ms)
+[----------] 1 test from SplayTest (57 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (87 ms total)
+[  PASSED  ] 1 test.

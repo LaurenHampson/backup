@@ -1,0 +1,11 @@
+Running main() from gtest_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from BSTTest
+[ RUN      ] BSTTest.Test26_InternalFindNonexisting
+[       OK ] BSTTest.Test26_InternalFindNonexisting (22 ms)
+[----------] 1 test from BSTTest (27 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (53 ms total)
+[  PASSED  ] 1 test.
