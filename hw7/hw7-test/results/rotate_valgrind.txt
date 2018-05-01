@@ -1,0 +1,735 @@
+==5322== Memcheck, a memory error detector
+==5322== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5322== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5322== Command: ../rotate_target/test1
+==5322== Parent PID: 5304
+==5322== 
+==5322== 
+==5322== HEAP SUMMARY:
+==5322==     in use at exit: 72,760 bytes in 2 blocks
+==5322==   total heap usage: 171 allocs, 169 frees, 118,641 bytes allocated
+==5322== 
+==5322== 56 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==5322==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5322==    by 0x4074E5: BinarySearchTree<int, double>::insert(std::pair<int const, double> const&) (bst.h:1125)
+==5322==    by 0x406335: void RotateTest::InsertInTree<int, double>(BinarySearchTree<int, double>&, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > const&) (rotate_gtest_class.h:117)
+==5322==    by 0x404D97: RotateTest_Test1_LeftRotateRoot_Test::TestBody() (test1.cpp:20)
+==5322==    by 0x4302D2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test1)
+==5322==    by 0x427D63: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test1)
+==5322==    by 0x42801C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test1)
+==5322==    by 0x428204: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test1)
+==5322==    by 0x42A6B0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test1)
+==5322==    by 0x42AAC0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test1)
+==5322==    by 0x4044FF: main (in /home/cs104/hw7/hw7-test/rotate_target/test1)
+==5322== 
+==5322== LEAK SUMMARY:
+==5322==    definitely lost: 56 bytes in 1 blocks
+==5322==    indirectly lost: 0 bytes in 0 blocks
+==5322==      possibly lost: 0 bytes in 0 blocks
+==5322==    still reachable: 0 bytes in 0 blocks
+==5322==         suppressed: 72,704 bytes in 1 blocks
+==5322== 
+==5322== For counts of detected and suppressed errors, rerun with: -v
+==5322== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+==5332== Memcheck, a memory error detector
+==5332== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5332== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5332== Command: ../rotate_target/test2
+==5332== Parent PID: 5304
+==5332== 
+==5332== 
+==5332== HEAP SUMMARY:
+==5332==     in use at exit: 72,760 bytes in 2 blocks
+==5332==   total heap usage: 171 allocs, 169 frees, 118,645 bytes allocated
+==5332== 
+==5332== 56 bytes in 1 blocks are definitely lost in loss record 1 of 2
+==5332==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5332==    by 0x4074E5: BinarySearchTree<int, double>::insert(std::pair<int const, double> const&) (bst.h:1125)
+==5332==    by 0x406335: void RotateTest::InsertInTree<int, double>(BinarySearchTree<int, double>&, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > const&) (rotate_gtest_class.h:117)
+==5332==    by 0x404D97: RotateTest_Test2_RightRotateRoot_Test::TestBody() (test2.cpp:20)
+==5332==    by 0x430432: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test2)
+==5332==    by 0x427EC3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test2)
+==5332==    by 0x42817C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test2)
+==5332==    by 0x428364: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test2)
+==5332==    by 0x42A810: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test2)
+==5332==    by 0x42AC20: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test2)
+==5332==    by 0x4044FF: main (in /home/cs104/hw7/hw7-test/rotate_target/test2)
+==5332== 
+==5332== LEAK SUMMARY:
+==5332==    definitely lost: 56 bytes in 1 blocks
+==5332==    indirectly lost: 0 bytes in 0 blocks
+==5332==      possibly lost: 0 bytes in 0 blocks
+==5332==    still reachable: 0 bytes in 0 blocks
+==5332==         suppressed: 72,704 bytes in 1 blocks
+==5332== 
+==5332== For counts of detected and suppressed errors, rerun with: -v
+==5332== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+==5340== Memcheck, a memory error detector
+==5340== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5340== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5340== Command: ../rotate_target/test3
+==5340== Parent PID: 5304
+==5340== 
+==5340== 
+==5340== HEAP SUMMARY:
+==5340==     in use at exit: 72,816 bytes in 3 blocks
+==5340==   total heap usage: 174 allocs, 171 frees, 118,853 bytes allocated
+==5340== 
+==5340== 112 bytes in 2 blocks are definitely lost in loss record 1 of 2
+==5340==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5340==    by 0x40798B: BinarySearchTree<int, double>::insert(std::pair<int const, double> const&) (bst.h:1125)
+==5340==    by 0x40670D: void RotateTest::InsertInTree<int, double>(BinarySearchTree<int, double>&, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > const&) (rotate_gtest_class.h:117)
+==5340==    by 0x404DEF: RotateTest_Test3_LeftRotateLeftChildOfParent_Test::TestBody() (test3.cpp:22)
+==5340==    by 0x430CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test3)
+==5340==    by 0x428773: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test3)
+==5340==    by 0x428A2C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test3)
+==5340==    by 0x428C14: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test3)
+==5340==    by 0x42B0C0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test3)
+==5340==    by 0x42B4D0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test3)
+==5340==    by 0x4044FF: main (in /home/cs104/hw7/hw7-test/rotate_target/test3)
+==5340== 
+==5340== LEAK SUMMARY:
+==5340==    definitely lost: 112 bytes in 2 blocks
+==5340==    indirectly lost: 0 bytes in 0 blocks
+==5340==      possibly lost: 0 bytes in 0 blocks
+==5340==    still reachable: 0 bytes in 0 blocks
+==5340==         suppressed: 72,704 bytes in 1 blocks
+==5340== 
+==5340== For counts of detected and suppressed errors, rerun with: -v
+==5340== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+==5348== Memcheck, a memory error detector
+==5348== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5348== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5348== Command: ../rotate_target/test4
+==5348== Parent PID: 5304
+==5348== 
+==5348== 
+==5348== HEAP SUMMARY:
+==5348==     in use at exit: 72,816 bytes in 3 blocks
+==5348==   total heap usage: 174 allocs, 171 frees, 118,857 bytes allocated
+==5348== 
+==5348== 112 bytes in 2 blocks are definitely lost in loss record 1 of 2
+==5348==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5348==    by 0x40798B: BinarySearchTree<int, double>::insert(std::pair<int const, double> const&) (bst.h:1125)
+==5348==    by 0x40670D: void RotateTest::InsertInTree<int, double>(BinarySearchTree<int, double>&, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > const&) (rotate_gtest_class.h:117)
+==5348==    by 0x404DEF: RotateTest_Test4_RightRotateLeftChildOfParent_Test::TestBody() (test4.cpp:22)
+==5348==    by 0x430E42: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test4)
+==5348==    by 0x4288D3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test4)
+==5348==    by 0x428B8C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test4)
+==5348==    by 0x428D74: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test4)
+==5348==    by 0x42B220: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test4)
+==5348==    by 0x42B630: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test4)
+==5348==    by 0x4044FF: main (in /home/cs104/hw7/hw7-test/rotate_target/test4)
+==5348== 
+==5348== LEAK SUMMARY:
+==5348==    definitely lost: 112 bytes in 2 blocks
+==5348==    indirectly lost: 0 bytes in 0 blocks
+==5348==      possibly lost: 0 bytes in 0 blocks
+==5348==    still reachable: 0 bytes in 0 blocks
+==5348==         suppressed: 72,704 bytes in 1 blocks
+==5348== 
+==5348== For counts of detected and suppressed errors, rerun with: -v
+==5348== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+==5356== Memcheck, a memory error detector
+==5356== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5356== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5356== Command: ../rotate_target/test5
+==5356== Parent PID: 5304
+==5356== 
+==5356== 
+==5356== HEAP SUMMARY:
+==5356==     in use at exit: 72,816 bytes in 3 blocks
+==5356==   total heap usage: 174 allocs, 171 frees, 118,857 bytes allocated
+==5356== 
+==5356== 112 bytes in 2 blocks are definitely lost in loss record 1 of 2
+==5356==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5356==    by 0x40798B: BinarySearchTree<int, double>::insert(std::pair<int const, double> const&) (bst.h:1125)
+==5356==    by 0x40670D: void RotateTest::InsertInTree<int, double>(BinarySearchTree<int, double>&, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > const&) (rotate_gtest_class.h:117)
+==5356==    by 0x404DEF: RotateTest_Test5_LeftRotateRightChildOfParent_Test::TestBody() (test5.cpp:22)
+==5356==    by 0x430CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test5)
+==5356==    by 0x428773: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test5)
+==5356==    by 0x428A2C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test5)
+==5356==    by 0x428C14: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test5)
+==5356==    by 0x42B0C0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test5)
+==5356==    by 0x42B4D0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test5)
+==5356==    by 0x4044FF: main (in /home/cs104/hw7/hw7-test/rotate_target/test5)
+==5356== 
+==5356== LEAK SUMMARY:
+==5356==    definitely lost: 112 bytes in 2 blocks
+==5356==    indirectly lost: 0 bytes in 0 blocks
+==5356==      possibly lost: 0 bytes in 0 blocks
+==5356==    still reachable: 0 bytes in 0 blocks
+==5356==         suppressed: 72,704 bytes in 1 blocks
+==5356== 
+==5356== For counts of detected and suppressed errors, rerun with: -v
+==5356== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+==5364== Memcheck, a memory error detector
+==5364== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5364== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5364== Command: ../rotate_target/test6
+==5364== Parent PID: 5304
+==5364== 
+==5364== 
+==5364== HEAP SUMMARY:
+==5364==     in use at exit: 72,816 bytes in 3 blocks
+==5364==   total heap usage: 174 allocs, 171 frees, 118,861 bytes allocated
+==5364== 
+==5364== 112 bytes in 2 blocks are definitely lost in loss record 1 of 2
+==5364==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5364==    by 0x40798B: BinarySearchTree<int, double>::insert(std::pair<int const, double> const&) (bst.h:1125)
+==5364==    by 0x40670D: void RotateTest::InsertInTree<int, double>(BinarySearchTree<int, double>&, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > const&) (rotate_gtest_class.h:117)
+==5364==    by 0x404DEF: RotateTest_Test6_RightRotateRightChildOfParent_Test::TestBody() (test6.cpp:22)
+==5364==    by 0x430E42: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test6)
+==5364==    by 0x4288D3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test6)
+==5364==    by 0x428B8C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test6)
+==5364==    by 0x428D74: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test6)
+==5364==    by 0x42B220: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test6)
+==5364==    by 0x42B630: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test6)
+==5364==    by 0x4044FF: main (in /home/cs104/hw7/hw7-test/rotate_target/test6)
+==5364== 
+==5364== LEAK SUMMARY:
+==5364==    definitely lost: 112 bytes in 2 blocks
+==5364==    indirectly lost: 0 bytes in 0 blocks
+==5364==      possibly lost: 0 bytes in 0 blocks
+==5364==    still reachable: 0 bytes in 0 blocks
+==5364==         suppressed: 72,704 bytes in 1 blocks
+==5364== 
+==5364== For counts of detected and suppressed errors, rerun with: -v
+==5364== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+==5372== Memcheck, a memory error detector
+==5372== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5372== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5372== Command: ../rotate_target/test7
+==5372== Parent PID: 5304
+==5372== 
+==5372== 
+==5372== HEAP SUMMARY:
+==5372==     in use at exit: 72,872 bytes in 4 blocks
+==5372==   total heap usage: 176 allocs, 172 frees, 119,033 bytes allocated
+==5372== 
+==5372== 168 bytes in 3 blocks are definitely lost in loss record 1 of 2
+==5372==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5372==    by 0x40798B: BinarySearchTree<int, double>::insert(std::pair<int const, double> const&) (bst.h:1125)
+==5372==    by 0x40670D: void RotateTest::InsertInTree<int, double>(BinarySearchTree<int, double>&, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > const&) (rotate_gtest_class.h:117)
+==5372==    by 0x404DEF: RotateTest_Test7_LeftRotateRightChildHasLeftSubtree_Test::TestBody() (test7.cpp:24)
+==5372==    by 0x430CE2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test7)
+==5372==    by 0x428773: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test7)
+==5372==    by 0x428A2C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test7)
+==5372==    by 0x428C14: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test7)
+==5372==    by 0x42B0C0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test7)
+==5372==    by 0x42B4D0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test7)
+==5372==    by 0x4044FF: main (in /home/cs104/hw7/hw7-test/rotate_target/test7)
+==5372== 
+==5372== LEAK SUMMARY:
+==5372==    definitely lost: 168 bytes in 3 blocks
+==5372==    indirectly lost: 0 bytes in 0 blocks
+==5372==      possibly lost: 0 bytes in 0 blocks
+==5372==    still reachable: 0 bytes in 0 blocks
+==5372==         suppressed: 72,704 bytes in 1 blocks
+==5372== 
+==5372== For counts of detected and suppressed errors, rerun with: -v
+==5372== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+==5380== Memcheck, a memory error detector
+==5380== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5380== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5380== Command: ../rotate_target/test8
+==5380== Parent PID: 5304
+==5380== 
+==5380== 
+==5380== HEAP SUMMARY:
+==5380==     in use at exit: 72,872 bytes in 4 blocks
+==5380==   total heap usage: 176 allocs, 172 frees, 119,037 bytes allocated
+==5380== 
+==5380== 168 bytes in 3 blocks are definitely lost in loss record 1 of 2
+==5380==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5380==    by 0x40798B: BinarySearchTree<int, double>::insert(std::pair<int const, double> const&) (bst.h:1125)
+==5380==    by 0x40670D: void RotateTest::InsertInTree<int, double>(BinarySearchTree<int, double>&, std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > > const&) (rotate_gtest_class.h:117)
+==5380==    by 0x404DEF: RotateTest_Test8_RightRotateLeftChildHasRightSubtree_Test::TestBody() (test8.cpp:24)
+==5380==    by 0x430E42: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test8)
+==5380==    by 0x4288D3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test8)
+==5380==    by 0x428B8C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test8)
+==5380==    by 0x428D74: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test8)
+==5380==    by 0x42B220: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test8)
+==5380==    by 0x42B630: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test8)
+==5380==    by 0x4044FF: main (in /home/cs104/hw7/hw7-test/rotate_target/test8)
+==5380== 
+==5380== LEAK SUMMARY:
+==5380==    definitely lost: 168 bytes in 3 blocks
+==5380==    indirectly lost: 0 bytes in 0 blocks
+==5380==      possibly lost: 0 bytes in 0 blocks
+==5380==    still reachable: 0 bytes in 0 blocks
+==5380==         suppressed: 72,704 bytes in 1 blocks
+==5380== 
+==5380== For counts of detected and suppressed errors, rerun with: -v
+==5380== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+
+==5388== Memcheck, a memory error detector
+==5388== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5388== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5388== Command: ../rotate_target/test9
+==5388== Parent PID: 5304
+==5388== 
+==5388== 
+==5388== HEAP SUMMARY:
+==5388==     in use at exit: 73,568 bytes in 19 blocks
+==5388==   total heap usage: 229 allocs, 210 frees, 120,973 bytes allocated
+==5388== 
+==5388== 432 bytes in 9 blocks are definitely lost in loss record 1 of 3
+==5388==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5388==    by 0x40556F: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5388==    by 0x4045FD: RotateTest::InsertRandom(InheritedRotate<int, int>&, unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >&) (rotate_gtest_class.h:219)
+==5388==    by 0x404B3F: RotateTest_Test9_SameKeysIdentical_Test::TestBody() (test9.cpp:8)
+==5388==    by 0x42B602: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x422E03: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x4230BC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x4232A4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x425750: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x425B60: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x40430F: main (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388== 
+==5388== 432 bytes in 9 blocks are definitely lost in loss record 2 of 3
+==5388==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5388==    by 0x40556F: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5388==    by 0x405AF3: void RotateTest::InsertInTree<int, int>(BinarySearchTree<int, int>&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) (rotate_gtest_class.h:117)
+==5388==    by 0x404B5F: RotateTest_Test9_SameKeysIdentical_Test::TestBody() (test9.cpp:9)
+==5388==    by 0x42B602: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x422E03: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x4230BC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x4232A4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x425750: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x425B60: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388==    by 0x40430F: main (in /home/cs104/hw7/hw7-test/rotate_target/test9)
+==5388== 
+==5388== LEAK SUMMARY:
+==5388==    definitely lost: 864 bytes in 18 blocks
+==5388==    indirectly lost: 0 bytes in 0 blocks
+==5388==      possibly lost: 0 bytes in 0 blocks
+==5388==    still reachable: 0 bytes in 0 blocks
+==5388==         suppressed: 72,704 bytes in 1 blocks
+==5388== 
+==5388== For counts of detected and suppressed errors, rerun with: -v
+==5388== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+
+==5396== Memcheck, a memory error detector
+==5396== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5396== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5396== Command: ../rotate_target/test10
+==5396== Parent PID: 5304
+==5396== 
+==5396== 
+==5396== HEAP SUMMARY:
+==5396==     in use at exit: 73,568 bytes in 19 blocks
+==5396==   total heap usage: 229 allocs, 210 frees, 120,988 bytes allocated
+==5396== 
+==5396== 432 bytes in 9 blocks are definitely lost in loss record 1 of 3
+==5396==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5396==    by 0x4055B5: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5396==    by 0x4045FD: RotateTest::InsertRandom(InheritedRotate<int, int>&, unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >&) (rotate_gtest_class.h:219)
+==5396==    by 0x404B3F: RotateTest_Test10_SameKeysIsomorphic_Test::TestBody() (test10.cpp:8)
+==5396==    by 0x42BC52: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x423453: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x42370C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x4238F4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x425DA0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x4261B0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x40430F: main (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396== 
+==5396== 432 bytes in 9 blocks are definitely lost in loss record 2 of 3
+==5396==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5396==    by 0x4055B5: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5396==    by 0x405CDB: void RotateTest::InsertInTree<int, int>(BinarySearchTree<int, int>&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) (rotate_gtest_class.h:117)
+==5396==    by 0x404B98: RotateTest_Test10_SameKeysIsomorphic_Test::TestBody() (test10.cpp:10)
+==5396==    by 0x42BC52: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x423453: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x42370C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x4238F4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x425DA0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x4261B0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396==    by 0x40430F: main (in /home/cs104/hw7/hw7-test/rotate_target/test10)
+==5396== 
+==5396== LEAK SUMMARY:
+==5396==    definitely lost: 864 bytes in 18 blocks
+==5396==    indirectly lost: 0 bytes in 0 blocks
+==5396==      possibly lost: 0 bytes in 0 blocks
+==5396==    still reachable: 0 bytes in 0 blocks
+==5396==         suppressed: 72,704 bytes in 1 blocks
+==5396== 
+==5396== For counts of detected and suppressed errors, rerun with: -v
+==5396== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+
+==5404== Memcheck, a memory error detector
+==5404== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5404== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5404== Command: ../rotate_target/test11
+==5404== Parent PID: 5304
+==5404== 
+==5404== 
+==5404== HEAP SUMMARY:
+==5404==     in use at exit: 73,568 bytes in 19 blocks
+==5404==   total heap usage: 229 allocs, 210 frees, 120,984 bytes allocated
+==5404== 
+==5404== 432 bytes in 9 blocks are definitely lost in loss record 1 of 3
+==5404==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5404==    by 0x405655: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5404==    by 0x4045FD: RotateTest::InsertRandom(InheritedRotate<int, int>&, unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >&) (rotate_gtest_class.h:219)
+==5404==    by 0x404B3F: RotateTest_Test11_SameKeysDifferent_Test::TestBody() (test11.cpp:8)
+==5404==    by 0x42BCF2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x4234F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x4237AC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x423994: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x425E40: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x426250: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x40430F: main (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404== 
+==5404== 432 bytes in 9 blocks are definitely lost in loss record 2 of 3
+==5404==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5404==    by 0x405655: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5404==    by 0x405DE7: void RotateTest::InsertInTree<int, int>(BinarySearchTree<int, int>&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) (rotate_gtest_class.h:117)
+==5404==    by 0x404C2B: RotateTest_Test11_SameKeysDifferent_Test::TestBody() (test11.cpp:14)
+==5404==    by 0x42BCF2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x4234F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x4237AC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x423994: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x425E40: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x426250: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404==    by 0x40430F: main (in /home/cs104/hw7/hw7-test/rotate_target/test11)
+==5404== 
+==5404== LEAK SUMMARY:
+==5404==    definitely lost: 864 bytes in 18 blocks
+==5404==    indirectly lost: 0 bytes in 0 blocks
+==5404==      possibly lost: 0 bytes in 0 blocks
+==5404==    still reachable: 0 bytes in 0 blocks
+==5404==         suppressed: 72,704 bytes in 1 blocks
+==5404== 
+==5404== For counts of detected and suppressed errors, rerun with: -v
+==5404== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+
+==5412== Memcheck, a memory error detector
+==5412== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5412== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5412== Command: ../rotate_target/test12
+==5412== Parent PID: 5304
+==5412== 
+==5412== 
+==5412== HEAP SUMMARY:
+==5412==     in use at exit: 73,328 bytes in 14 blocks
+==5412==   total heap usage: 218 allocs, 204 frees, 120,440 bytes allocated
+==5412== 
+==5412== 192 bytes in 4 blocks are definitely lost in loss record 1 of 3
+==5412==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5412==    by 0x405687: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5412==    by 0x405EFF: void RotateTest::InsertInTree<int, int>(BinarySearchTree<int, int>&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > const&) (rotate_gtest_class.h:117)
+==5412==    by 0x404C24: RotateTest_Test12_SameKeysDifferentLength_Test::TestBody() (test12.cpp:11)
+==5412==    by 0x42C112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x423913: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x423BCC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x423DB4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x426260: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x426670: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x40430F: main (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412== 
+==5412== 432 bytes in 9 blocks are definitely lost in loss record 2 of 3
+==5412==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5412==    by 0x405687: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5412==    by 0x4045FD: RotateTest::InsertRandom(InheritedRotate<int, int>&, unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >&) (rotate_gtest_class.h:219)
+==5412==    by 0x404B3F: RotateTest_Test12_SameKeysDifferentLength_Test::TestBody() (test12.cpp:8)
+==5412==    by 0x42C112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x423913: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x423BCC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x423DB4: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x426260: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x426670: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412==    by 0x40430F: main (in /home/cs104/hw7/hw7-test/rotate_target/test12)
+==5412== 
+==5412== LEAK SUMMARY:
+==5412==    definitely lost: 624 bytes in 13 blocks
+==5412==    indirectly lost: 0 bytes in 0 blocks
+==5412==      possibly lost: 0 bytes in 0 blocks
+==5412==    still reachable: 0 bytes in 0 blocks
+==5412==         suppressed: 72,704 bytes in 1 blocks
+==5412== 
+==5412== For counts of detected and suppressed errors, rerun with: -v
+==5412== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+
+==5420== Memcheck, a memory error detector
+==5420== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5420== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5420== Command: ../rotate_target/test13
+==5420== Parent PID: 5304
+==5420==
+
+==5429== Memcheck, a memory error detector
+==5429== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5429== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5429== Command: ../rotate_target/test14
+==5429== Parent PID: 5304
+==5429==
+
+==5441== Memcheck, a memory error detector
+==5441== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5441== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5441== Command: ../rotate_target/test15
+==5441== Parent PID: 5304
+==5441==
+
+==5453== Memcheck, a memory error detector
+==5453== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5453== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5453== Command: ../rotate_target/test16
+==5453== Parent PID: 5304
+==5453==
+
+==5462== Memcheck, a memory error detector
+==5462== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5462== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5462== Command: ../rotate_target/test17
+==5462== Parent PID: 5304
+==5462==
+
+==5473== Memcheck, a memory error detector
+==5473== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5473== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5473== Command: ../rotate_target/test18
+==5473== Parent PID: 5304
+==5473==
+
+==5484== Memcheck, a memory error detector
+==5484== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5484== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5484== Command: ../rotate_target/test19
+==5484== Parent PID: 5304
+==5484==
+
+==5493== Memcheck, a memory error detector
+==5493== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5493== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5493== Command: ../rotate_target/test20
+==5493== Parent PID: 5304
+==5493==
+
+==5505== Memcheck, a memory error detector
+==5505== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5505== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5505== Command: ../rotate_target/stress1
+==5505== Parent PID: 5304
+==5505== 
+==5505== 
+==5505== HEAP SUMMARY:
+==5505==     in use at exit: 5,577,440 bytes in 114,683 blocks
+==5505==   total heap usage: 229,533 allocs, 114,850 frees, 11,128,016 bytes allocated
+==5505== 
+==5505== 48 bytes in 1 blocks are possibly lost in loss record 1 of 5
+==5505==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5505==    by 0x40523D: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5505==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5505==    by 0x404ADC: RotateTest_Stress1_LeftRotate_Test::TestBody() (stress1.cpp:7)
+==5505==    by 0x429F92: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421793: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421A4C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421C34: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4240E0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4244F0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505== 
+==5505== 786,336 bytes in 16,382 blocks are definitely lost in loss record 3 of 5
+==5505==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5505==    by 0x40523D: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5505==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5505==    by 0x404AA4: RotateTest_Stress1_LeftRotate_Test::TestBody() (stress1.cpp:5)
+==5505==    by 0x429F92: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421793: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421A4C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421C34: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4240E0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4244F0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505== 
+==5505== 1,572,768 bytes in 32,766 blocks are definitely lost in loss record 4 of 5
+==5505==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5505==    by 0x40523D: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5505==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5505==    by 0x404AC0: RotateTest_Stress1_LeftRotate_Test::TestBody() (stress1.cpp:6)
+==5505==    by 0x429F92: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421793: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421A4C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421C34: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4240E0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4244F0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505== 
+==5505== 3,145,584 bytes in 65,533 blocks are definitely lost in loss record 5 of 5
+==5505==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5505==    by 0x40523D: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5505==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5505==    by 0x404ADC: RotateTest_Stress1_LeftRotate_Test::TestBody() (stress1.cpp:7)
+==5505==    by 0x429F92: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421793: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421A4C: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x421C34: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4240E0: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4244F0: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress1)
+==5505== 
+==5505== LEAK SUMMARY:
+==5505==    definitely lost: 5,504,688 bytes in 114,681 blocks
+==5505==    indirectly lost: 0 bytes in 0 blocks
+==5505==      possibly lost: 48 bytes in 1 blocks
+==5505==    still reachable: 0 bytes in 0 blocks
+==5505==         suppressed: 72,704 bytes in 1 blocks
+==5505== 
+==5505== For counts of detected and suppressed errors, rerun with: -v
+==5505== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+
+==5513== Memcheck, a memory error detector
+==5513== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5513== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5513== Command: ../rotate_target/stress2
+==5513== Parent PID: 5304
+==5513== 
+==5513== 
+==5513== HEAP SUMMARY:
+==5513==     in use at exit: 5,577,440 bytes in 114,683 blocks
+==5513==   total heap usage: 229,533 allocs, 114,850 frees, 11,128,019 bytes allocated
+==5513== 
+==5513== 48 bytes in 1 blocks are possibly lost in loss record 1 of 5
+==5513==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5513==    by 0x40523D: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5513==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5513==    by 0x404ADC: RotateTest_Stress2_RightRotate_Test::TestBody() (stress2.cpp:7)
+==5513==    by 0x42A0F2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x4218F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x421BAC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x421D94: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x424240: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x424650: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513== 
+==5513== 786,336 bytes in 16,382 blocks are definitely lost in loss record 3 of 5
+==5513==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5513==    by 0x40523D: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5513==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5513==    by 0x404AA4: RotateTest_Stress2_RightRotate_Test::TestBody() (stress2.cpp:5)
+==5513==    by 0x42A0F2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x4218F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x421BAC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x421D94: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x424240: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x424650: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513== 
+==5513== 1,572,768 bytes in 32,766 blocks are definitely lost in loss record 4 of 5
+==5513==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5513==    by 0x40523D: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5513==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5513==    by 0x404AC0: RotateTest_Stress2_RightRotate_Test::TestBody() (stress2.cpp:6)
+==5513==    by 0x42A0F2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x4218F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x421BAC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x421D94: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x424240: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x424650: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513== 
+==5513== 3,145,584 bytes in 65,533 blocks are definitely lost in loss record 5 of 5
+==5513==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5513==    by 0x40523D: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5513==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5513==    by 0x404ADC: RotateTest_Stress2_RightRotate_Test::TestBody() (stress2.cpp:7)
+==5513==    by 0x42A0F2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x4218F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x421BAC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x421D94: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x424240: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x424650: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress2)
+==5513== 
+==5513== LEAK SUMMARY:
+==5513==    definitely lost: 5,504,688 bytes in 114,681 blocks
+==5513==    indirectly lost: 0 bytes in 0 blocks
+==5513==      possibly lost: 48 bytes in 1 blocks
+==5513==    still reachable: 0 bytes in 0 blocks
+==5513==         suppressed: 72,704 bytes in 1 blocks
+==5513== 
+==5513== For counts of detected and suppressed errors, rerun with: -v
+==5513== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+
+==5521== Memcheck, a memory error detector
+==5521== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5521== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5521== Command: ../rotate_target/stress3
+==5521== Parent PID: 5304
+==5521== 
+==5521== 
+==5521== HEAP SUMMARY:
+==5521==     in use at exit: 5,577,440 bytes in 114,683 blocks
+==5521==   total heap usage: 229,629 allocs, 114,946 frees, 12,962,994 bytes allocated
+==5521== 
+==5521== 48 bytes in 1 blocks are possibly lost in loss record 1 of 5
+==5521==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5521==    by 0x4055AF: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5521==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5521==    by 0x404AF5: RotateTest_Stress3_SameKeys_Test::TestBody() (stress3.cpp:7)
+==5521==    by 0x42ADF2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4225F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4228AC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x422A94: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x424F40: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x425350: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521== 
+==5521== 786,336 bytes in 16,382 blocks are definitely lost in loss record 3 of 5
+==5521==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5521==    by 0x4055AF: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5521==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5521==    by 0x404AB1: RotateTest_Stress3_SameKeys_Test::TestBody() (stress3.cpp:5)
+==5521==    by 0x42ADF2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4225F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4228AC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x422A94: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x424F40: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x425350: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521== 
+==5521== 1,572,768 bytes in 32,766 blocks are definitely lost in loss record 4 of 5
+==5521==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5521==    by 0x4055AF: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5521==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5521==    by 0x404AD3: RotateTest_Stress3_SameKeys_Test::TestBody() (stress3.cpp:6)
+==5521==    by 0x42ADF2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4225F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4228AC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x422A94: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x424F40: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x425350: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521== 
+==5521== 3,145,584 bytes in 65,533 blocks are definitely lost in loss record 5 of 5
+==5521==    at 0x4C2E17F: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5521==    by 0x4055AF: BinarySearchTree<int, int>::insert(std::pair<int const, int> const&) (bst.h:1125)
+==5521==    by 0x4044C9: RotateTest::InsertFull(InheritedRotate<int, int>&, int) (rotate_gtest_class.h:204)
+==5521==    by 0x404AF5: RotateTest_Stress3_SameKeys_Test::TestBody() (stress3.cpp:7)
+==5521==    by 0x42ADF2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4225F3: testing::Test::Run() [clone .part.368] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4228AC: testing::TestInfo::Run() [clone .part.369] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x422A94: testing::TestCase::Run() [clone .part.370] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x424F40: testing::internal::UnitTestImpl::RunAllTests() [clone .part.371] [clone .constprop.426] (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x425350: testing::UnitTest::Run() (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521==    by 0x4042CF: main (in /home/cs104/hw7/hw7-test/rotate_target/stress3)
+==5521== 
+==5521== LEAK SUMMARY:
+==5521==    definitely lost: 5,504,688 bytes in 114,681 blocks
+==5521==    indirectly lost: 0 bytes in 0 blocks
+==5521==      possibly lost: 48 bytes in 1 blocks
+==5521==    still reachable: 0 bytes in 0 blocks
+==5521==         suppressed: 72,704 bytes in 1 blocks
+==5521== 
+==5521== For counts of detected and suppressed errors, rerun with: -v
+==5521== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)
+

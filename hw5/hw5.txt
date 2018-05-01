@@ -1,0 +1,81 @@
+
+Problem 1c: Break QuickSort
+
+
+Array of 10 doubles that will always have a pivot that is the 2nd largest or 2nd smallest element of the array
+	Base cases: Array Length 1--> return, array length 2-> quicksort on the two elements, using the start element to be both the first element and middle element to calculate the median
+
+
+	1.0 8.0 7.0 10.0 2.0 4.0 5.0 6.0 9.0 3.0
+
+		Start element= 1.0, middle = 2.0, end = 3.0
+
+		the median of these three elements is 2.0, which is the second smallest element of this array
+
+	Sorting the first time:
+
+		1.0 [2.0] 8.0 7.0 10.0 4.0 5.0 6.0 9.0 3.0
+
+
+			1.0 already sorted because single element base case
+
+			Sorting subarray:8.0 7.0 10.0 4.0 5.0 6.0 9.0 3.0
+				Start = 8.0 Middle = 4.0 End = 3.0
+					Median of these three elements is 4.0 and 4.0 is also the second smallest element in the subarray
+
+				UPDATED FINAL ARRAY: [1.0] [2.0] 3.0 [4.0] 8.0 7.0 10.0 5.0 6.0 9.0
+
+
+				Sorting Subarray: 8.0 7.0 10.0 5.0 6.0 9.0
+					Start = 8.0 Middle = 10.0 End = 9.0
+
+					Median of these tree elements is 9.0 which is also the second largest element in the subarray
+
+					UPDATED FINAL ARRAY: [1.0][2.0][3.0][4.0] 8.0 7.0 5.0 6.0 [9.0] 10.0
+
+
+					Sorting Subarray: 8.0 7.0 5.0 6.0
+
+						Start = 8.0, Middle = 7.0, end = 6.0
+
+							Median of these three elements is 7.0 which is also the second largest element in the subarray
+
+								UPDATED FINAL ARRAY: [1.0][2.0][3.0][4.0] 5.0 6.0 [7.0] 8.0 [9.0] [10.0]
+
+						Sorting Subarray: 5.0 6.0
+
+							Start= 5.0, "Middle" = 5.0; End = 6.0
+
+							If you automatically use start as one of your base cases, the final array will be
+
+
+
+
+			[1.0][2.0][3.0][4.0] [5.0] [6.0] [7.0] [8.0] [9.0] [10.0]
+
+
+
+
+
+
+Problem 2: Break Interpolation Search
+
+	One example of an array of size n of double that would cause interpolation Search tow queryeach entry of the arry before finally finding its target is:
+
+		1.0, 2.0, 3.0, ..., 999.0, 1000.0, 100000000.0
+
+		This is an array of size 1001.
+
+		Although this is for the most part a uniformally distributed array, it will still
+		end up taking O(N) to search for the correct value in this array.
+
+		For example if you want to use interpolation search to search for 1000.0
+		in this array, it will take 1000 queries.
+
+		Due to the fact that the numerical value of the final key increases exponentially,
+		it acts as an outlier, which will cause the search to always start at the beginning of
+		the range.
+
+		This is because it makes the number resulting from (index range/value range) to be very 
+		small, skewing the overall calculation of the target index, that one would expect in 
+		a uniformally distributed array.
