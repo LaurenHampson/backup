@@ -29,7 +29,11 @@ def compare_file(source, compare):
 			print('\tWARNING: Fewer lines in comp file than in source file.')
 
 		for i in range(len(slines)):
+<<<<<<< HEAD
+			if i > len(clines):
+=======
 			if i >= len(clines):
+>>>>>>> 2112a1c24943e92385b44ba3f67f353c3f842e91
 				print('\tMISSING: ' + slines[i])
 				passed = False
 			else:
